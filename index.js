@@ -35,11 +35,11 @@ const getPhone = phoneNumber => {
     )}-${cleanedNumber.slice(6, 8)}-${cleanedNumber.slice(8)}`
   } else if (cleanedNumber.length === 11) {
     return `+${cleanedNumber.slice(0, 1)} (${cleanedNumber.slice(
-      0,
-      3
-    )}) ${cleanedNumber.slice(3, 6)}-${cleanedNumber.slice(
-      6,
-      8
+      1,
+      4
+    )}) ${cleanedNumber.slice(4, 7)}-${cleanedNumber.slice(
+      7,
+      9
     )}-${cleanedNumber.slice(9)}`
   } else {
     return 'Невірні дані'
